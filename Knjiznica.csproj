@@ -4,14 +4,14 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{72E17FA9-E1A6-4D4C-A201-7663096084E3}</ProjectGuid>
+    <ProjectGuid>{C076620A-D301-4173-8950-05786B941007}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <RootNamespace>Knjiznica</RootNamespace>
     <AssemblyName>Knjiznica</AssemblyName>
-    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
-    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,29 +32,71 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
     <Reference Include="System.Core" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
-    <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
     <Reference Include="System.Drawing" />
-    <Reference Include="System.Net.Http" />
     <Reference Include="System.Windows.Forms" />
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Form1.cs">
+    <Compile Include="Forme\DetaljiPosudbe.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
+    <Compile Include="Forme\DetaljiPosudbe.Designer.cs">
+      <DependentUpon>DetaljiPosudbe.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forme\DetaljiUcenika.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\DetaljiUcenika.Designer.cs">
+      <DependentUpon>DetaljiUcenika.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Knjige.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Knjige.Designer.cs">
+      <DependentUpon>Knjige.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\frmKnjiznica.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\frmKnjiznica.Designer.cs">
+      <DependentUpon>frmKnjiznica.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forme\Ucenici.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forme\Ucenici.Designer.cs">
+      <DependentUpon>Ucenici.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Knjiga.cs" />
+    <Compile Include="Model\PodatkovniKontekst.cs" />
+    <Compile Include="Model\Posudba.cs" />
+    <Compile Include="Model\Ucenik.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Forme\DetaljiPosudbe.resx">
+      <DependentUpon>DetaljiPosudbe.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\DetaljiUcenika.resx">
+      <DependentUpon>DetaljiUcenika.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Knjige.resx">
+      <DependentUpon>Knjige.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\frmKnjiznica.resx">
+      <DependentUpon>frmKnjiznica.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forme\Ucenici.resx">
+      <DependentUpon>Ucenici.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -62,7 +105,9 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
+    <None Include="app.config" />
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
@@ -72,9 +117,6 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="App.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
