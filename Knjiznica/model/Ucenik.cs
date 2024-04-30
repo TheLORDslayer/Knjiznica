@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Knjiznica.model
 {
-    public class Ucenik
+    public class Ucenik : IComparable 
     {
         public string OIB { get; set; }
         public string Ime { get; set; }
