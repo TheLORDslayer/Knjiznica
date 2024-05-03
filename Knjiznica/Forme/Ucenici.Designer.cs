@@ -92,7 +92,7 @@
             this.Controls.Add(this.btnDodaj);
             this.Controls.Add(this.LBucenici);
             this.Name = "Ucenici";
-            this.Text = "Ucenici";
+            this.Text = "Učenici";
             this.ResumeLayout(false);
             this.PerformLayout();
 
