@@ -17,7 +17,7 @@ using Knjiznica.Forme;
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmKnjiznica() );
+            Application.Run(new frmKnjiznica());
         }
     }
 }
