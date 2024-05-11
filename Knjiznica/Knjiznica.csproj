@@ -82,6 +82,7 @@
     <Compile Include="Forme\Ucenici.Designer.cs">
       <DependentUpon>Ucenici.cs</DependentUpon>
     </Compile>
+    <Compile Include="Helper.cs" />
     <Compile Include="model\Knjiga.cs" />
     <Compile Include="model\PodatkovniKontekst.cs" />
     <Compile Include="model\Posudba.cs" />

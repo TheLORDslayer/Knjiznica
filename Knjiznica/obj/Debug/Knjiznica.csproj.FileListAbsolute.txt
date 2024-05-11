@@ -9,3 +9,8 @@ C:\Users\Hrvoje\OneDrive\Dokumenti\C#\Knjiznica\Knjiznica\obj\Debug\Knjiznica.cs
 C:\Users\Hrvoje\OneDrive\Dokumenti\C#\Knjiznica\Knjiznica\obj\Debug\Knjiznica.exe
 C:\Users\Hrvoje\OneDrive\Dokumenti\C#\Knjiznica\Knjiznica\obj\Debug\Knjiznica.pdb
 C:\Users\Hrvoje\OneDrive\Dokumenti\C#\Knjiznica\Knjiznica\obj\Debug\Knjiznica.Forme.Ucenici.resources
+C:\Users\Hrvoje\OneDrive\Dokumenti\C#\Knjiznica\Knjiznica\obj\Debug\Knjiznica.Forme.DetaljiKnjige.resources
+C:\Users\Hrvoje\OneDrive\Dokumenti\C#\Knjiznica\Knjiznica\obj\Debug\Knjiznica.Forme.DetaljiPosudbe.resources
+C:\Users\Hrvoje\OneDrive\Dokumenti\C#\Knjiznica\Knjiznica\obj\Debug\Knjiznica.Forme.DetaljiUcenika.resources
+C:\Users\Hrvoje\OneDrive\Dokumenti\C#\Knjiznica\Knjiznica\obj\Debug\Knjiznica.Forme.Knjige.resources
+C:\Users\Hrvoje\OneDrive\Dokumenti\C#\Knjiznica\Knjiznica\obj\Debug\Knjiznica.Forme.frmKnjiznica.resources
